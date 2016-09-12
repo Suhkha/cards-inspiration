@@ -1,0 +1,42 @@
+.o-card
+	perspective 1000
+	margin 5vh auto
+	
+	
+.o-card, .o-card__face
+	width 50vw
+	height 50vh	
+	
+.o-card.o-card--hover .o-card--inner 
+	transform rotateY(180deg)
+	
+.o-card--inner
+	transition 0.6s
+	transform-style preserve-3d
+	position relative
+
+.o-card__face
+	backface-visibility hidden
+	position absolute
+	top 0
+	left 0
+	padding 0 10px
+	font-size 2vw
+
+.o-card__face--front
+	background pink
+	z-index 2
+
+.o-card__face--back
+	transform rotateY(180deg)
+	background red
+
+
+
+#c-button__pay
+	position absolute
+	padding 15px
+	background red
+	color white
+	top 50%
+	right -80px

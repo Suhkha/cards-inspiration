@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+	<main class="o-card">
+		<div class="o-card--inner">
+			<div class="o-card__face o-card__face--front">
+				<img src="http://placekitten.com/g/200/300" class="img-responsive">
+			</div>
+			<div class="o-card__face o-card__face--back">
+				<div class="c-form">
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<label>Payment method</label>
+							<select class="form-control">
+								 <option value=""></option>
+								 <option>VISA</option>
+								 <option>MasterCard</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							
+						</div>
+						<div class="col-md-12 col-xs-6">
+							<label>Credit Card Number</label>
+							<input type="text" class="form-control" name="credit_card_number">
+						</div>
+						<div class="col-md-12 col-xs-6">
+							<label>Cardholder Name</label>
+							<input type="text" class="form-control" name="cardholder_name">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 col-xs-6">
+							<label>Cardholder Expiry</label>
+							<input type="text" class="form-control" name="cardholder_expiry">
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<label>CVV</label>
+							<input type="text" class="form-control" name="cvv">
+						</div>				
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" id="c-button__pay">Flip card</a>
+	</main>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+	<script src="https://use.fontawesome.com/be7e763425.js"></script>
+</body>
+</html>
